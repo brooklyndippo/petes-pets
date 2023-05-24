@@ -8,4 +8,11 @@ module.exports = (app) => {
       res.render('pets-index', { pets: pets });    
     });
   });
+
+  // SEARCH PET
+  app.get('/search', (req, res) => {
+    Pet.find().exec((err, pets) => {
+        res.render('pets-index', { pets: pets });    
+    });
+  });
 }
