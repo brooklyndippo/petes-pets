@@ -37,7 +37,7 @@ describe('Pets', ()  => {
 
   it ('should search pets by name on /search GET', (done) => {
     chai.request(server)
-      .get('/search?term=norman')
+      .get('/search?term=fido')
       .end((err, res) => {
         res.should.have.status(200);
         res.should.be.html;
