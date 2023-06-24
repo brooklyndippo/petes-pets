@@ -13,8 +13,9 @@ const PetSchema = new Schema({
   name: { type: String, required: true }
   , birthday: {type: String, required: true }
   , species: { type: String, required: true }
-  , picUrl: { type: String, required: true }
-  , picUrlSq: { type: String, required: true }
+  , picUrl: { type: String, required: false }
+  , picUrlSq: { type: String, required: false }
+  , avatarUrl: { type: String, required: false }
   , favoriteFood: { type: String, required: true }
   , description: { type: String, minlength: 140, required: true }
 }, {
